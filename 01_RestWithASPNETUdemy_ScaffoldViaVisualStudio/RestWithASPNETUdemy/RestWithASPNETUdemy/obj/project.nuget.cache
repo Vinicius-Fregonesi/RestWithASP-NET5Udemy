@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "4zgGZmfSbiNKs+wXhytFw3yQ8vHsYjwYNBsK041rbwtmHUq2YhVEslp+aecRn/+JkWWT845tAX1UnB+FtZQ9Ow==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Vinícius Olimpio\\source\\repos\\Vinicius-Fregonesi\\RestWithASP-NET5Udemy\\01_RestWithASPNETUdemy_ScaffoldViaVisualStudio\\RestWithASPNETUdemy\\RestWithASPNETUdemy\\RestWithASPNETUdemy.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Vinícius Olimpio\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.10.14\\microsoft.visualstudio.azure.containers.tools.targets.1.10.14.nupkg.sha512"
+  ],
+  "logs": []
+}
