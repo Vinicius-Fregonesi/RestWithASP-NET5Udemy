@@ -56,3 +56,12 @@ C:\Users\Vinícius Olimpio\Source\Repos\Vinicius-Fregonesi\RestWithASP-NET5Udemy
 C:\Users\Vinícius Olimpio\Source\Repos\Vinicius-Fregonesi\RestWithASP-NET5Udemy\00_RestWithASPNETUdemy_ScaffoldViaTerminal\RestWithASPNETUdemy\obj\Debug\net5.0\ref\RestWithASPNETUdemy.dll
 C:\Users\Vinícius Olimpio\Source\Repos\Vinicius-Fregonesi\RestWithASP-NET5Udemy\00_RestWithASPNETUdemy_ScaffoldViaTerminal\RestWithASPNETUdemy\obj\Debug\net5.0\RestWithASPNETUdemy.pdb
 C:\Users\Vinícius Olimpio\Source\Repos\Vinicius-Fregonesi\RestWithASP-NET5Udemy\00_RestWithASPNETUdemy_ScaffoldViaTerminal\RestWithASPNETUdemy\obj\Debug\net5.0\RestWithASPNETUdemy.genruntimeconfig.cache
+C:\Users\Vinícius Olimpio\source\repos\Vinicius-Fregonesi\RestWithASP-NET5Udemy\00_RestWithASPNETUdemy_ScaffoldViaTerminal\RestWithASPNETUdemy\bin\Debug\net5.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Vinícius Olimpio\source\repos\Vinicius-Fregonesi\RestWithASP-NET5Udemy\00_RestWithASPNETUdemy_ScaffoldViaTerminal\RestWithASPNETUdemy\bin\Debug\net5.0\Microsoft.Bcl.HashCode.dll
+C:\Users\Vinícius Olimpio\source\repos\Vinicius-Fregonesi\RestWithASP-NET5Udemy\00_RestWithASPNETUdemy_ScaffoldViaTerminal\RestWithASPNETUdemy\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\Vinícius Olimpio\source\repos\Vinicius-Fregonesi\RestWithASP-NET5Udemy\00_RestWithASPNETUdemy_ScaffoldViaTerminal\RestWithASPNETUdemy\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\Vinícius Olimpio\source\repos\Vinicius-Fregonesi\RestWithASP-NET5Udemy\00_RestWithASPNETUdemy_ScaffoldViaTerminal\RestWithASPNETUdemy\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\Vinícius Olimpio\source\repos\Vinicius-Fregonesi\RestWithASP-NET5Udemy\00_RestWithASPNETUdemy_ScaffoldViaTerminal\RestWithASPNETUdemy\bin\Debug\net5.0\MySqlConnector.dll
+C:\Users\Vinícius Olimpio\source\repos\Vinicius-Fregonesi\RestWithASP-NET5Udemy\00_RestWithASPNETUdemy_ScaffoldViaTerminal\RestWithASPNETUdemy\bin\Debug\net5.0\Newtonsoft.Json.dll
+C:\Users\Vinícius Olimpio\source\repos\Vinicius-Fregonesi\RestWithASP-NET5Udemy\00_RestWithASPNETUdemy_ScaffoldViaTerminal\RestWithASPNETUdemy\bin\Debug\net5.0\Pomelo.EntityFrameworkCore.MySql.dll
+C:\Users\Vinícius Olimpio\source\repos\Vinicius-Fregonesi\RestWithASP-NET5Udemy\00_RestWithASPNETUdemy_ScaffoldViaTerminal\RestWithASPNETUdemy\bin\Debug\net5.0\Pomelo.JsonObject.dll
