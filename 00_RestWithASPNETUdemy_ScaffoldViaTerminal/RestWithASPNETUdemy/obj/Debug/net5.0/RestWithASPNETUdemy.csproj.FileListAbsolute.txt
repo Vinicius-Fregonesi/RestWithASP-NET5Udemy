@@ -65,3 +65,16 @@ C:\Users\Vinícius Olimpio\source\repos\Vinicius-Fregonesi\RestWithASP-NET5Udemy
 C:\Users\Vinícius Olimpio\source\repos\Vinicius-Fregonesi\RestWithASP-NET5Udemy\00_RestWithASPNETUdemy_ScaffoldViaTerminal\RestWithASPNETUdemy\bin\Debug\net5.0\Newtonsoft.Json.dll
 C:\Users\Vinícius Olimpio\source\repos\Vinicius-Fregonesi\RestWithASP-NET5Udemy\00_RestWithASPNETUdemy_ScaffoldViaTerminal\RestWithASPNETUdemy\bin\Debug\net5.0\Pomelo.EntityFrameworkCore.MySql.dll
 C:\Users\Vinícius Olimpio\source\repos\Vinicius-Fregonesi\RestWithASP-NET5Udemy\00_RestWithASPNETUdemy_ScaffoldViaTerminal\RestWithASPNETUdemy\bin\Debug\net5.0\Pomelo.JsonObject.dll
+C:\Users\Vinícius Olimpio\source\repos\Vinicius-Fregonesi\RestWithASP-NET5Udemy\00_RestWithASPNETUdemy_ScaffoldViaTerminal\RestWithASPNETUdemy\bin\Debug\net5.0\Microsoft.AspNetCore.Mvc.Versioning.dll
+C:\Users\Vinícius Olimpio\source\repos\Vinicius-Fregonesi\RestWithASP-NET5Udemy\00_RestWithASPNETUdemy_ScaffoldViaTerminal\RestWithASPNETUdemy\bin\Debug\net5.0\Evolve.dll
+C:\Users\Vinícius Olimpio\source\repos\Vinicius-Fregonesi\RestWithASP-NET5Udemy\00_RestWithASPNETUdemy_ScaffoldViaTerminal\RestWithASPNETUdemy\bin\Debug\net5.0\Microsoft.DotNet.PlatformAbstractions.dll
+C:\Users\Vinícius Olimpio\source\repos\Vinicius-Fregonesi\RestWithASP-NET5Udemy\00_RestWithASPNETUdemy_ScaffoldViaTerminal\RestWithASPNETUdemy\bin\Debug\net5.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\Vinícius Olimpio\source\repos\Vinicius-Fregonesi\RestWithASP-NET5Udemy\00_RestWithASPNETUdemy_ScaffoldViaTerminal\RestWithASPNETUdemy\bin\Debug\net5.0\Serilog.dll
+C:\Users\Vinícius Olimpio\source\repos\Vinicius-Fregonesi\RestWithASP-NET5Udemy\00_RestWithASPNETUdemy_ScaffoldViaTerminal\RestWithASPNETUdemy\bin\Debug\net5.0\Serilog.AspNetCore.dll
+C:\Users\Vinícius Olimpio\source\repos\Vinicius-Fregonesi\RestWithASP-NET5Udemy\00_RestWithASPNETUdemy_ScaffoldViaTerminal\RestWithASPNETUdemy\bin\Debug\net5.0\Serilog.Extensions.Hosting.dll
+C:\Users\Vinícius Olimpio\source\repos\Vinicius-Fregonesi\RestWithASP-NET5Udemy\00_RestWithASPNETUdemy_ScaffoldViaTerminal\RestWithASPNETUdemy\bin\Debug\net5.0\Serilog.Extensions.Logging.dll
+C:\Users\Vinícius Olimpio\source\repos\Vinicius-Fregonesi\RestWithASP-NET5Udemy\00_RestWithASPNETUdemy_ScaffoldViaTerminal\RestWithASPNETUdemy\bin\Debug\net5.0\Serilog.Formatting.Compact.dll
+C:\Users\Vinícius Olimpio\source\repos\Vinicius-Fregonesi\RestWithASP-NET5Udemy\00_RestWithASPNETUdemy_ScaffoldViaTerminal\RestWithASPNETUdemy\bin\Debug\net5.0\Serilog.Settings.Configuration.dll
+C:\Users\Vinícius Olimpio\source\repos\Vinicius-Fregonesi\RestWithASP-NET5Udemy\00_RestWithASPNETUdemy_ScaffoldViaTerminal\RestWithASPNETUdemy\bin\Debug\net5.0\Serilog.Sinks.Console.dll
+C:\Users\Vinícius Olimpio\source\repos\Vinicius-Fregonesi\RestWithASP-NET5Udemy\00_RestWithASPNETUdemy_ScaffoldViaTerminal\RestWithASPNETUdemy\bin\Debug\net5.0\Serilog.Sinks.Debug.dll
+C:\Users\Vinícius Olimpio\source\repos\Vinicius-Fregonesi\RestWithASP-NET5Udemy\00_RestWithASPNETUdemy_ScaffoldViaTerminal\RestWithASPNETUdemy\bin\Debug\net5.0\Serilog.Sinks.File.dll
