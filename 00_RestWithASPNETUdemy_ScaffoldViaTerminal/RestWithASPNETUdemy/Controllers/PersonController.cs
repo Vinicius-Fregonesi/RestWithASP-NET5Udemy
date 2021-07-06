@@ -2,6 +2,7 @@
 using Microsoft.Extensions.Logging;
 using RestWithASPNETUdemy.model;
 using RestWithASPNETUdemy.Business;
+using RestWithASPNETUdemy.Data.Converter.VO;
 
 namespace RestWithASPNETUdemy.Controllers
 {
@@ -34,7 +35,7 @@ namespace RestWithASPNETUdemy.Controllers
             return Ok(person);
         }
         [HttpPost]
-        public IActionResult Post([FromBody] Person person)
+        public IActionResult Post([FromBody] PersonVO person)
         {
             if (person == null)
             {
@@ -43,7 +44,7 @@ namespace RestWithASPNETUdemy.Controllers
             return Ok(_personBusiness.Create(person));
         }
         [HttpPut]
-        public IActionResult Put([FromBody] Person person)
+        public IActionResult Put([FromBody] PersonVO person)
         {
             if (person == null)
             {

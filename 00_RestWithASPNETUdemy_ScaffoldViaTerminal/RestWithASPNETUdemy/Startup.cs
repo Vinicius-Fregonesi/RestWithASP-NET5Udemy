@@ -11,7 +11,7 @@ using RestWithASPNETUdemy.Business;
 using RestWithASPNETUdemy.Repository;
 using Serilog;
 using System.Collections.Generic;
-using RestWithASPNETUdemy.Repository.Implementations;
+using RestWithASPNETUdemy.Repository.Generic;
 
 namespace RestWithASPNETUdemy
 {
@@ -41,9 +41,8 @@ namespace RestWithASPNETUdemy
             services.AddApiVersioning();
             //Injeção de dependencia
             services.AddScoped<IPersonBusiness, PersonBusinessImplementation>();
-            services.AddScoped<IPersonRepository, PersonRepositoyImplementation>();
             services.AddScoped<IBookBusiness, BookBusinessImplementation>();
-            services.AddScoped<IBookRepository, BookRepositoryImplemetation>();
+            services.AddScoped(typeof(IRepository<>), typeof(GenericRepository<>));
             services.AddSwaggerGen(c =>
             { 
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "RestWithASPNETUdemy", Version = "v1" });

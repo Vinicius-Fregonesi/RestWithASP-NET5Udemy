@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using RestWithASPNETUdemy.Business;
+using RestWithASPNETUdemy.Data.VO;
 using RestWithASPNETUdemy.model;
 
 namespace RestWithASPNETUdemy.Controllers
@@ -34,7 +35,7 @@ namespace RestWithASPNETUdemy.Controllers
             return Ok(book);
         }
         [HttpPost]
-        public IActionResult Post([FromBody] Book book)
+        public IActionResult Post([FromBody] BookVO book)
         {
             if (book == null)
             {
@@ -43,7 +44,7 @@ namespace RestWithASPNETUdemy.Controllers
             return Ok(_bookBusiness.Create(book));
         }
         [HttpPut]
-        public IActionResult Put([FromBody] Book book)
+        public IActionResult Put([FromBody] BookVO book)
         {
             if (book == null)
             {
