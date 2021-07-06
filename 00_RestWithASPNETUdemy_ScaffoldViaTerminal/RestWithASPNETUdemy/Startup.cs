@@ -8,10 +8,10 @@ using Microsoft.OpenApi.Models;
 using RestWithASPNETUdemy.Context;
 using RestWithASPNETUdemy.Business.Implementations;
 using RestWithASPNETUdemy.Business;
-using RestWithASPNETUdemy.Repository;
 using Serilog;
 using System.Collections.Generic;
 using RestWithASPNETUdemy.Repository.Generic;
+using Microsoft.Net.Http.Headers;
 
 namespace RestWithASPNETUdemy
 {
@@ -37,6 +37,13 @@ namespace RestWithASPNETUdemy
             {
                 MigrateDatabase(connection);
             }
+            services.AddMvc(options =>
+            {
+                options.RespectBrowserAcceptHeader = true;
+                options.FormatterMappings.SetMediaTypeMappingForFormat("xml", MediaTypeHeaderValue.Parse("applicattion/xml"));
+                options.FormatterMappings.SetMediaTypeMappingForFormat("json", MediaTypeHeaderValue.Parse("applicattion/json"));
+
+            }).AddXmlDataContractSerializerFormatters();
             //Versionamento de api
             services.AddApiVersioning();
             //Injeção de dependencia
