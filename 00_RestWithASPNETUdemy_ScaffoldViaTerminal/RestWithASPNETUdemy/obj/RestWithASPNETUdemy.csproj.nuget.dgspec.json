@@ -54,7 +54,7 @@
             },
             "Microsoft.AspNetCore.Mvc.Versioning": {
               "target": "Package",
-              "version": "[5.0.0, )"
+              "version": "[4.1.1, )"
             },
             "Pomelo.EntityFrameworkCore.MySql": {
               "target": "Package",

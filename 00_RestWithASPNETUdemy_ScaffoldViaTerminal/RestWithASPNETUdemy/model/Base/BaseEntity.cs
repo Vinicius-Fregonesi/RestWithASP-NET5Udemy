@@ -9,6 +9,6 @@ namespace RestWithASPNETUdemy.model.Base
     public class BaseEntity
     {
         [Column("id")]
-        public long Id { get; set; }
+        public long id { get; set; }
     }
 }

@@ -18,7 +18,7 @@ namespace RestWithASPNETUdemy.Data.Converter.Implementations
             {
                 return new Person 
                 {
-                    Id = origin.Id,
+                    id = origin.Id,
                     FirstName = origin.FirstName,
                     LastName= origin.LastName,
                     Gender= origin.Gender,
@@ -46,7 +46,7 @@ namespace RestWithASPNETUdemy.Data.Converter.Implementations
             {
                 return new PersonVO
                 {
-                    Id = origin.Id,
+                    Id = origin.id,
                     FirstName = origin.FirstName,
                     LastName = origin.LastName,
                     Gender = origin.Gender,

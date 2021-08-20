@@ -12,6 +12,9 @@ using Serilog;
 using System.Collections.Generic;
 using RestWithASPNETUdemy.Repository.Generic;
 using Microsoft.Net.Http.Headers;
+using RestWithASPNETUdemy.HyperMidia.Filters;
+using RestWithASPNETUdemy.HyperMidia.Enricher;
+using System;
 
 namespace RestWithASPNETUdemy
 {
@@ -30,6 +33,12 @@ namespace RestWithASPNETUdemy
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddCors(options => options.AddDefaultPolicy(builder =>
+            {
+                builder.AllowAnyOrigin()
+                .AllowAnyMethod()
+                .AllowAnyHeader();
+            }));
             services.AddControllers();
             var connection = Configuration["MySQLConnection:MySQLConnectionString"];
             services.AddDbContext<MySQLContext>(options => options.UseMySql(connection));
@@ -44,6 +53,11 @@ namespace RestWithASPNETUdemy
                 options.FormatterMappings.SetMediaTypeMappingForFormat("json", MediaTypeHeaderValue.Parse("applicattion/json"));
 
             }).AddXmlDataContractSerializerFormatters();
+            var filterOptions = new HyperMediaFilterOptions();
+            filterOptions.ContentReponseEnricherList.Add(new PersonEnricher());
+            filterOptions.ContentReponseEnricherList.Add(new BookEnricher());
+            services.AddSingleton(filterOptions);
+
             //Versionamento de api
             services.AddApiVersioning();
             //Injeção de dependencia
@@ -51,8 +65,17 @@ namespace RestWithASPNETUdemy
             services.AddScoped<IBookBusiness, BookBusinessImplementation>();
             services.AddScoped(typeof(IRepository<>), typeof(GenericRepository<>));
             services.AddSwaggerGen(c =>
-            { 
-                c.SwaggerDoc("v1", new OpenApiInfo { Title = "RestWithASPNETUdemy", Version = "v1" });
+            {
+                c.SwaggerDoc("v1", new OpenApiInfo
+                {
+                    Title = "RestWithASPNETUdemy",
+                    Version = "v1",
+                    Contact = new OpenApiContact
+                    {
+                        Name = "Vinícius Olimpio",
+                        Url = new Uri("https://github.com/Vinicius-Fregonesi")
+                    }
+                });
             });
         }
 
@@ -71,11 +94,14 @@ namespace RestWithASPNETUdemy
 
             app.UseRouting();
 
+            app.UseCors();
+
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
+                endpoints.MapControllerRoute("DefaultApi", "{controller=values}/{id}");
             });
         }
         private void MigrateDatabase(string connection)

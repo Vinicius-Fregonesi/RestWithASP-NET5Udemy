@@ -32,7 +32,7 @@ namespace RestWithASPNETUdemy.Repository.Generic
 
         public void Delete(long id)
         {
-            var result = _dataset.SingleOrDefault(p => p.Equals(id));
+            var result = _dataset.SingleOrDefault(p => p.id.Equals(id));
             if (result != null)
             {
                 try
@@ -49,12 +49,12 @@ namespace RestWithASPNETUdemy.Repository.Generic
 
         public T FindById(long id)
         {
-            return _dataset.SingleOrDefault(p => p.Id.Equals(id));
+            return _dataset.SingleOrDefault(p => p.id.Equals(id));
         }
 
         public T Update(T item)
         {
-            var result = _dataset.SingleOrDefault(p => p.Equals(item.Id));
+            var result = _dataset.SingleOrDefault(p => p.id.Equals(item.id));
             if (result != null)
             {
                 try
@@ -76,7 +76,7 @@ namespace RestWithASPNETUdemy.Repository.Generic
 
         public bool Exists(long id)
         {
-            return _dataset.Any(p => p.Id.Equals(id));
+            return _dataset.Any(p => p.id.Equals(id));
         }
 
         public List<T> FindAll()

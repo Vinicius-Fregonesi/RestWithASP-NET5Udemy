@@ -10,6 +10,7 @@ namespace RestWithASPNETUdemy.model
     [Table("books")]
     public class Book : BaseEntity
     {
+
         [Column("author")]
         public string Author { get; set; }
         [Column("launch_date")]

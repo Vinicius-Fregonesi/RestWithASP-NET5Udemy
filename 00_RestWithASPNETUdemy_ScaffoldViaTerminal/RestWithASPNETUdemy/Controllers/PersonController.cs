@@ -3,6 +3,8 @@ using Microsoft.Extensions.Logging;
 using RestWithASPNETUdemy.model;
 using RestWithASPNETUdemy.Business;
 using RestWithASPNETUdemy.Data.Converter.VO;
+using RestWithASPNETUdemy.HyperMidia.Filters;
+using System.Collections.Generic;
 
 namespace RestWithASPNETUdemy.Controllers
 {
@@ -20,11 +22,21 @@ namespace RestWithASPNETUdemy.Controllers
         }
         //Sum é o metodo, first number primeiro parametro e second number segundo parametro
         [HttpGet]
+        [ProducesResponseType((200), Type = typeof(List<PersonVO>))]
+        [ProducesResponseType(204)]
+        [ProducesResponseType(400)]
+        [ProducesResponseType(401)]
+        [TypeFilter(typeof(HyperMediaFilter))]
         public IActionResult Get()
         {
             return Ok(_personBusiness.FindAll());
         }
         [HttpGet("{id}")]
+        [ProducesResponseType((200), Type = typeof(PersonVO))]
+        [ProducesResponseType(400)]
+        [ProducesResponseType(401)]
+
+        [TypeFilter(typeof(HyperMediaFilter))]
         public IActionResult Get(long id)
         {
             var person = _personBusiness.FindById(id);
@@ -35,6 +47,10 @@ namespace RestWithASPNETUdemy.Controllers
             return Ok(person);
         }
         [HttpPost]
+        [ProducesResponseType((200), Type = typeof(PersonVO))]
+        [ProducesResponseType(400)]
+        [ProducesResponseType(401)]
+        [TypeFilter(typeof(HyperMediaFilter))]
         public IActionResult Post([FromBody] PersonVO person)
         {
             if (person == null)
@@ -44,6 +60,10 @@ namespace RestWithASPNETUdemy.Controllers
             return Ok(_personBusiness.Create(person));
         }
         [HttpPut]
+        [ProducesResponseType((200), Type = typeof(PersonVO))]
+        [ProducesResponseType(400)]
+        [ProducesResponseType(401)]
+        [TypeFilter(typeof(HyperMediaFilter))]
         public IActionResult Put([FromBody] PersonVO person)
         {
             if (person == null)
